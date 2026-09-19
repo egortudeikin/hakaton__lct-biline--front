@@ -1,0 +1,23 @@
+:root {
+  /* font-family */
+  --font-family: "Inter", sans-serif;
+
+  /* colors */
+  --bg-color: #eef2f6;
+  --button-color: #ebebeb82;
+  --accent-color: #ffcc0082;
+  --main-color: #000;
+  --main-disabled-color: hsla(0, 0%, 0%, 0.4);
+  --secondary-color: #fff;
+  --text-color: #737373;
+  --text-disabled-color: #A9A9A9;
+  --text-accent-color: #00000080;
+  --shadow-accent-glow: #fbf722;
+  
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  /* transition */
+  --transition-time: 0.2s;
+}
