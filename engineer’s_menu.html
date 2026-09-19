@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню инженера</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="page__body">
+    <main class="main-container">
+        <div class="modal-card">
+            <div class="card-header">
+                <div class="user-info">
+                    <div class="avatar">
+                        👨‍🔧
+                    </div>
+                    <div class="user-details">
+                        <h1>Иван Петров</h1>
+                        <p>Инженер-монтажник • Автомобиль</p>
+                    </div>
+                </div>
+                <button class="close-btn">×</button>
+            </div>
+
+            <div class="card-body">
+                <div class="left-col">
+                    <div class="status-block">
+                        <div class="status-block-header">
+                            <span class="label-uppercase">СТАТУС СМЕНЫ</span>
+                            <div class="status-badge">
+                                <span class="dot"></span>
+                                На смене (08:00 – 17:00)
+                            </div>
+                        </div>
+                        <div class="location-block">
+                            <span class="label">Локация:</span>
+                            <p>Тверская ул. (в пути)</p>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Заявки -->
+                    <div class="requests-block">
+                        <span class="label-requests">ЗАЯВКИ НА СЕГОДНЯ (3)</span>
+                        
+                        <div class="request-item active">
+                            <div class="req-header">
+                                <strong>#8921 - Тверская 12</strong>
+                            </div>
+                            <div class="req-status green">
+                                <span class="dot"></span> В процессе (ETA 09:40)
+                            </div>
+                        </div>
+
+                        <div class="request-item">
+                            <div class="req-header">
+                                <strong>#8925 - Лесная 4</strong>
+                            </div>
+                            <div class="req-status gray">
+                                Ожидает (13:00 - 15:00)
+                            </div>
+                        </div>
+
+                        <div class="request-item">
+                            <div class="req-header">
+                                <strong>#8930 - Арбат 18</strong>
+                            </div>
+                            <div class="req-status gray">
+                                Ожидает (15:30 - 17:00)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка -->
+                <div class="right-col">
+                    <div class="right-col-body">
+                        <div class="equipment-header">
+                            <span class="label-right-col">ОБОРУДОВАНИЕ В БАГАЖНИКЕ (ТМЦ)</span>
+                            <button class="btn-yellow">
+                                + Выдать на багажник
+                            </button>
+                        </div>
+
+                        <span class="sub-label">УСТРОЙСТВА И ТЕРМИНАЛЫ</span>
+
+                        <div class="device-item">
+                            <div class="device-info">
+                                <strong>Router Beeline Wi-Fi 6 Pro</strong>
+                                <span class="sn">S/N: 9842-AAAA-8812 • Состояние: <span class="text-green">Новое</span></span>
+                            </div>
+                            <div class="device-qty">1 шт</div>
+                        </div>
+
+                        <div class="device-item">
+                            <div class="device-info">
+                                <strong>ONT-терминал Huawei HG8120H</strong>
+                                <span class="sn">S/N: HW-7721-0092-X • Состояние: <span class="text-green">Новое</span></span>
+                            </div>
+                            <div class="device-qty">2 шт</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="btn-outline">Печать акта ТМЦ</button>
+                        <div class="footer-right">
+                            <button class="btn-red">Снять со смены</button>
+                            <button class="btn-dark">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
