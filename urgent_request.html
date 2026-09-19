@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Срочная заявка</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>   
+    <body class="page__body">
+        <div class="overlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="header-left">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-exclamation"></i>
+                        </div>
+                        <div class="header-text">
+                            <h2>Создание заявки</h2>
+                            <p>Аварийный ввод задачи с автоматическим пересчетом маршрута</p>
+                        </div>
+                    </div>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>УРОВЕНЬ ПРИОРИТЕТА</label>
+                        <div class="priority-buttons">
+                            <button class="priority-btn active">
+                                <span class="dot"></span> 
+                                Высокий (авария)
+                            </button>
+                            <button class="priority-btn">
+                                низкий
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label_input>Имя клиента</label_input>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label_input>Номер телефона</label_input>
+                        <input type="tel" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label_input>Адрес объекта <span class="required">*</span></label_input>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label_input>Тип неисправности</label_input>
+                        <div class="select-wrapper">
+                            <select class="form-input">
+                                <option value=""></option>
+                                <option value="internet">Нет интернета</option>
+                                <option value="tv">Нет ТВ</option>
+                                <option value="phone">Нет телефонии</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-icon"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label_input>Дата, время</label_input>
+                        <div class="select-wrapper">
+                            <select class="form-input">
+                                <option value=""></option>
+                                <option value="now">Сейчас</option>
+                                <option value="later">Позже</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-icon"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn-submit">Назначить и перестроить</button>
+                    <button class="btn-cancel">Отмена</button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
+
