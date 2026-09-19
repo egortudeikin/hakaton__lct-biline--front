@@ -56,7 +56,7 @@
 .header__link-profile {
   background-color: var(--bg-profile-color);
   border-radius: 50px;
-  padding: 13px;
+  padding: 13px 18px;
 }
 
 .menu__main {
