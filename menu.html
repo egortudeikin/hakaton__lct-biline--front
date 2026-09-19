@@ -56,21 +56,88 @@
                   <button class="menu__masters-button">+ Добавить</button>
                 </div>
                 <div class="menu__masters-cards">
-                    <article class="menu__masters-card">
-                        <h3 class="menu__masters-card-title">Иван Петров (Авто)</h3>
-                        <p class="menu__masters-card-description">Смена: 08:00–17:00 | Заявок: 3</p>
-                    </article>
-                    <article class="menu__masters-card--disabled">
-                        <h3 class="menu__masters-card-title menu__masters-card-title--disabled">Алексей Смирнов (Пеший)</h3>
-                        <p class="menu__masters-card-description menu__masters-card-description--disabled">Смена: 09:00–18:00 | Заявок: 2</p>
-                    </article>
+                  <article class="menu__masters-card">
+                    <h3 class="menu__masters-card-title">Иван Петров (Авто)</h3>
+                    <p class="menu__masters-card-description">
+                      Смена: 08:00–17:00 | Заявок: 3
+                    </p>
+                  </article>
+                  <article class="menu__masters-card--disabled">
+                    <h3
+                      class="menu__masters-card-title menu__masters-card-title--disabled"
+                    >
+                      Алексей Смирнов (Пеший)
+                    </h3>
+                    <p
+                      class="menu__masters-card-description menu__masters-card-description--disabled"
+                    >
+                      Смена: 09:00–18:00 | Заявок: 2
+                    </p>
+                  </article>
                 </div>
               </div>
               <div class="menu__applications">
-                <h2 class="menu__applications-title">ЗАЯВКИ (6)</h2>
-                <div class="menu__applications-buttons">
-                    <button class="menu__unallocated-applications-button">Нераспределённые</button>
+                <h2 class="menu__applications-title">ЗАЯВКИ (3)</h2>
+                <div class="menu__applications-buttons-choice">
+                  <div class="menu__unallocated-applications-buttons">
+                    <button class="menu__unallocated-applications-button">
+                      Не распределённые
+                    </button>
+                    <p class="menu__unallocated-applications-quantity">1</p>
+                  </div>
+                  <div class="menu__distributed-applications-buttons">
+                    <button class="menu__distributed-applications-button menu__no-active-applications-button">
+                      Распределённые
+                    </button>
+                    <p class="menu__distributed-applications-quantity">2</p>
+                  </div>
                 </div>
+                <div class="menu__unallocated-cards">
+                  <article class="menu__unallocated-card">
+                    <h3 class="menu__unallocated-card-title">Заявка #8921</h3>
+                    <p class="menu__unallocated-card-data">
+                      Дата визита:
+                      <span class="menu__unallocated-card-data-accent"
+                        >8 сентября 2026</span
+                      >
+                    </p>
+                    <p class="menu__unallocated-card-time">
+                      Окно:
+                      <span class="menu__unallocated-card-time-accent"
+                        >09:00 — 12:00</span
+                      >
+                      | Адрес: Тверская 12
+                    </p>
+                    <p class="menu__unallocated-card-service">Услуга: Подключение интернета</p>
+                    <div class="menu__unallocated-card-footer">
+                        <h4 class="menu__unallocated-card-footer-title">НАЗНАЧЕНИЕ СИСТЕМОЙ:</h4>
+                        <div class="menu__unallocated-card-footer-descriptions">
+                            <p class="menu__unallocated-card-footer-name">Иван Петров</p>
+                            <p class="menu__unallocated-card-footer-info">(Оптимален, +2.1 км)</p>
+                        </div>
+                        <div class="menu__unallocated-card-footer-buttons">
+                            <button class="menu__button-confirmation">Утвердить выбор</button>
+                            <button class="menu__button-change">Изменить мастера</button>
+                        </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- <div class="menu__distributed-cards">
+                    <article class="menu__distributed-card">
+                        <div class="menu__distributed-card-info">
+                            <h3 class="menu__distributed-card-title">Заявка #8922</h3>
+                            <p class="menu__distributed-card-description">8 сентября (12:00–15:00) | Ленинский пр. 45</p>
+                        </div>
+                        <p class="menu__distributed-card-status">В очереди</p>
+                    </article>
+                    <article class="menu__distributed-card">
+                        <div class="menu__distributed-card-info">
+                            <h3 class="menu__distributed-card-title">Заявка #8922</h3>
+                            <p class="menu__distributed-card-description">8 сентября (12:00–15:00) | Ленинский пр. 45</p>
+                        </div>
+                        <p class="menu__distributed-card-status">В очереди</p>
+                    </article>
+                </div> -->
               </div>
             </div>
           </main>
