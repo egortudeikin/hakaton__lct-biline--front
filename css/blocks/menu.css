@@ -1,0 +1,207 @@
+.menu__container {
+  max-width: 736px;
+}
+
+.menu__header {
+  background-color: var(--bg-header-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 330px;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+
+.header__mini-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #0000001a;
+  border-radius: 25px;
+}
+
+.header__button--light {
+  background-color: var(--bg-main-color);
+  overflow: hidden;
+  padding-inline: 15px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  border-radius: 25px;
+  font-size: 10px;
+  text-align: center;
+  color: var(--text-main-color);
+}
+
+.header__button--no-active {
+  font-size: 10px;
+  text-align: center;
+  color: var(--text-secondary-color);
+  padding-right: 15px;
+}
+
+.header__link-profile {
+  background-color: var(--bg-profile-color);
+  border-radius: 50px;
+  padding: 13px;
+}
+
+.menu__main {
+  background-color: var(--bg-main-color);
+  padding-top: 27px;
+  padding-inline: 20px;
+}
+
+.menu__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 24px;
+}
+
+.menu__button-opt {
+  background-color: var(--bg-header-color);
+  font-size: 16px;
+  color: var(--text-main-color);
+  padding-block: 12px;
+  padding-inline: 20px;
+  border: 1px solid var(--border-color-1);
+  border-radius: 15px;
+}
+
+.menu__button-plan {
+  background-color: var(--bg-button-color-1);
+  font-size: 16px;
+  color: var(--text-third-color);
+  padding-block: 12px;
+  padding-inline: 35px;
+  border: 1px solid var(--border-color-1);
+  border-radius: 15px;
+}
+
+.menu__button-request {
+  background-color: var(--bg-button-color-2);
+  font-size: 16px;
+  color: var(--text-secondary-color);
+  padding-block: 12px;
+  padding-inline: 20px;
+  border: 1px solid var(--border-color-1);
+  border-radius: 15px;
+}
+
+.menu__masters-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-1);
+  border: 1px solid var(--border-color-2);
+  border-radius: 15px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.menu__masters-online,
+.menu__masters-mileage {
+  margin-right: 150px;
+}
+
+.menu__masters-online {
+  margin-left: 24px;
+}
+
+.menu__masters-online-title,
+.menu__masters-mileage-title {
+  font-size: 14px;
+  color: var(--text-fourth-color);
+}
+
+.menu__master-online-description,
+.menu__master-mileage-description {
+  font-size: 16px;
+  color: var(--text-fifth-color);
+}
+
+.menu__masters-mileage {
+  border-left: 1px solid var(--border-color-2);
+  padding-left: 24px;
+}
+
+.menu__masters-mileage-descriptions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu__master-mileage-description-percent {
+  font-size: 12px;
+  color: var(--text-sixth-color);
+}
+
+.menu__masters--info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.menu__masters-title {
+  font-size: 18px;
+  color: var(--text-seventh-color);
+}
+
+.menu__masters-button {
+  font-size: 14px;
+  color: var(--text-button-color);
+}
+
+.menu__masters-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 11px;
+}
+
+.menu__masters-card,
+.menu__masters-card--disabled {
+  background-color: var(--bg-color-1);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid var(--border-color-2);
+  padding-left: 24px;
+  padding-block: 8px;
+}
+
+.menu__masters-card {
+  border-left: 5px solid var(--border-color-3);
+}
+
+.menu__masters-card--disabled {
+  border-left: 5px solid var(--border-color-4);
+}
+
+.menu__masters-card-title {
+  font-size: 14px;
+  color: var(--text-fifth-color);
+}
+
+.menu__masters-card-description {
+  font-size: 12px;
+  color: var(--text-seventh-color);
+}
+
+.menu__masters-card-title--disabled,
+.menu__masters-card-description--disabled {
+  opacity: 0.5;
+}

@@ -5,4 +5,5 @@
 @import "./base/vars.css";
 
 /* blocks */
-
+@import "./blocks/menu.css";
+@import "./blocks/main.css";

@@ -8,12 +8,7 @@
 
 .page__body {
   min-width: 375px;
-  background-color: var(--bg-color);
-}
-
-.container {
-  width: min(var(--container-width), 100% - var(--container-padding) * 2);
-  margin-inline: auto;
+  background-color: #f1f5f9;
 }
 
 img {
