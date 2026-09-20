@@ -18,10 +18,10 @@
                 </svg>
               </a>
               <div class="header__mini-container">
-                <div class="header__buttons">
+                <!-- <div class="header__buttons">
                   <button class="header__button--light">Light</button>
                   <button class="header__button--no-active">Dark</button>
-                </div>
+                </div> -->
                 <a href="#" class="header__link-profile">
                   <svg width="36" height="40">
                     <use href="./decor/icon-profile.svg"></use>
@@ -37,7 +37,7 @@
                 <button class="menu__button-plan">Базовый план</button>
                 <button class="menu__button-request">+ Срочная заявка</button>
               </div>
-              <div class="menu__masters-info">
+              <!-- <div class="menu__masters-info">
                 <div class="menu__masters-online">
                   <p class="menu__masters-online-title">Мастера в сети</p>
                   <p class="menu__master-online-description">2 / 2 чел.</p>
@@ -49,7 +49,7 @@
                     <p class="menu__master-mileage-description-percent">-15%</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="menu__masters">
                 <div class="menu__masters--info">
                   <h2 class="menu__masters-title">МАСТЕРА (2)</h2>
@@ -86,7 +86,9 @@
                     <p class="menu__unallocated-applications-quantity">1</p>
                   </div>
                   <div class="menu__distributed-applications-buttons">
-                    <button class="menu__distributed-applications-button menu__no-active-applications-button">
+                    <button
+                      class="menu__distributed-applications-button menu__no-active-applications-button"
+                    >
                       Распределённые
                     </button>
                     <p class="menu__distributed-applications-quantity">2</p>
@@ -108,17 +110,29 @@
                       >
                       | Адрес: Тверская 12
                     </p>
-                    <p class="menu__unallocated-card-service">Услуга: Подключение интернета</p>
+                    <p class="menu__unallocated-card-service">
+                      Услуга: Подключение интернета
+                    </p>
                     <div class="menu__unallocated-card-footer">
-                        <h4 class="menu__unallocated-card-footer-title">НАЗНАЧЕНИЕ СИСТЕМОЙ:</h4>
-                        <div class="menu__unallocated-card-footer-descriptions">
-                            <p class="menu__unallocated-card-footer-name">Иван Петров</p>
-                            <p class="menu__unallocated-card-footer-info">(Оптимален, +2.1 км)</p>
-                        </div>
-                        <div class="menu__unallocated-card-footer-buttons">
-                            <button class="menu__button-confirmation">Утвердить выбор</button>
-                            <button class="menu__button-change">Изменить мастера</button>
-                        </div>
+                      <h4 class="menu__unallocated-card-footer-title">
+                        НАЗНАЧЕНИЕ СИСТЕМОЙ:
+                      </h4>
+                      <div class="menu__unallocated-card-footer-descriptions">
+                        <p class="menu__unallocated-card-footer-name">
+                          Иван Петров
+                        </p>
+                        <p class="menu__unallocated-card-footer-info">
+                          (Оптимален, +2.1 км)
+                        </p>
+                      </div>
+                      <div class="menu__unallocated-card-footer-buttons">
+                        <button class="menu__button-confirmation">
+                          Утвердить выбор
+                        </button>
+                        <button class="menu__button-change">
+                          Изменить мастера
+                        </button>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -138,6 +152,34 @@
                         <p class="menu__distributed-card-status">В очереди</p>
                     </article>
                 </div> -->
+              </div>
+              <div class="menu__footer">
+                <div class="menu__container">
+                  <h2 class="menu__footer-title">ЭТАПЫ ВЫПОЛНЕНИЯ РАБОТЫ:</h2>
+                  <div class="menu__footer-buttons-stages">
+                    <button
+                      class="menu__footer-button menu__footer-button-take"
+                    >
+                      <p class="button__title">1. Взять заявку</p>
+                      <p class="button__description">Выполнено (09:40)</p>
+                    </button>
+                    <button
+                      class="menu__footer-button menu__footer-button-start"
+                    >
+                      <p class="button__title">2. Начать работу</p>
+                      <p class="button__description">Нажмите на адресе</p>
+                    </button>
+                    <button
+                      class="menu__footer-button menu__footer-button-stop"
+                    >
+                      <p class="button__title">3. Завершить</p>
+                      <p class="button__description">Завершить (10:40)</p>
+                    </button>
+                  </div>
+                  <button class="menu__footer-button-revoke">
+                    Клиент отменил заявку
+                  </button>
+                </div>
               </div>
             </div>
           </main>
