@@ -414,11 +414,12 @@
     background: #F1F5F9;
     color: #475569;
     border: 1px solid #CBD5E1;
-    padding: 12px 52px;
+    padding: 12px 49px;
     border-radius: 8px;
     font-size: 11px;
     font-weight: bold;
     cursor: pointer;
+    white-space: nowrap;
     transition: background 0.2s;
 }
 
@@ -430,11 +431,12 @@
     background: #FFCC00;
     color: #000000;
     border: none;
-    padding: 12px 51px;
+    padding: 12px 48px;
     border-radius: 8px;
     font-size: 11px;
     font-weight: bold;
     cursor: pointer;
+    white-space: nowrap;
     transition: opacity 0.2s;
 }
 
