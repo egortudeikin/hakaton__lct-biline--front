@@ -1189,3 +1189,312 @@ textarea {
     margin-left: 0;
   }
 }
+
+
+/* =========================================================
+   REASSIGN MODAL — MOBILE ADAPTIVE
+   ========================================================= */
+
+@media (max-width: 767px) {
+  .page__body:has(.reassign-modal) {
+    min-width: 375px;
+    min-height: 100dvh;
+    margin: 0;
+    background: #64748b;
+    overflow: hidden;
+  }
+
+  .main-conteiner {
+    width: 100%;
+    min-height: 100dvh;
+    height: 100dvh;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.35);
+    overflow: hidden;
+  }
+
+  .reassign-modal {
+    width: 100%;
+    max-width: none;
+    max-height: calc(100dvh - 10px);
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding: 12px 12px calc(14px + env(safe-area-inset-bottom));
+    gap: 10px;
+    border-radius: 20px 20px 0 0;
+    border: 0;
+    box-shadow: 0 -10px 35px rgba(15, 23, 42, 0.28);
+  }
+
+  .reassign-header {
+    position: sticky;
+    top: -12px;
+    z-index: 10;
+    margin: -12px -12px 0;
+    padding: 18px 14px 11px;
+    background: #fff;
+  }
+
+  .reassign-header::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 38px;
+    height: 4px;
+    border-radius: 999px;
+    background: #cbd5e1;
+    transform: translateX(-50%);
+  }
+
+  .reassign-header-titles {
+    min-width: 0;
+    padding-right: 6px;
+  }
+
+  .reassign-header-badge {
+    min-width: 0;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 7px;
+    padding: 4px 7px;
+    font-size: 8px;
+  }
+
+  .reassign-header-title {
+    font-size: 15px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-header-subtitle {
+    margin-top: 3px;
+    font-size: 9px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-header-close {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin-top: 1px;
+    font-size: 25px;
+  }
+
+  .reassign-request-info {
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+    border-left-width: 3px;
+  }
+
+  .reassign-request-left {
+    min-width: 0;
+  }
+
+  .reassign-request-title {
+    font-size: 11px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-request-detail,
+  .reassign-request-reason {
+    font-size: 8.5px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-request-right {
+    min-width: 0;
+    align-items: flex-start;
+  }
+
+  .reassign-request-sla {
+    font-size: 10px;
+  }
+
+  .reassign-section-label {
+    margin-top: 1px;
+    margin-bottom: -1px;
+    font-size: 8px;
+    line-height: 1.35;
+  }
+
+  .reassign-card-ivan,
+  .reassign-card-mikhail,
+  .reassign-card-dmitry {
+    min-width: 0;
+    padding: 10px;
+    border-radius: 11px;
+  }
+
+  .reassign-card-ivan-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .reassign-card-ivan-top-left,
+  .reassign-card-mikhail-top,
+  .reassign-card-dmitry-top {
+    min-width: 0;
+    align-items: flex-start;
+  }
+
+  .reassign-card-ivan-avatar,
+  .reassign-card-mikhail-avatar,
+  .reassign-card-dmitry-avatar {
+    flex: 0 0 32px;
+  }
+
+  .reassign-card-ivan-name,
+  .reassign-card-mikhail-name {
+    min-width: 0;
+    font-size: 12px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-card-ivan-id,
+  .reassign-card-mikhail-id {
+    font-size: 9px;
+  }
+
+  .reassign-card-ivan-meta,
+  .reassign-card-mikhail-meta {
+    margin-top: 2px;
+    font-size: 8px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-card-ivan-meta>b {
+    font-size: 8px;
+  }
+
+  .reassign-card-ivan-optimal {
+    align-self: flex-start;
+    width: fit-content;
+    font-size: 8px;
+    padding: 4px 6px;
+  }
+
+  .reassign-card-ivan-body,
+  .reassign-card-mikhail-body {
+    min-width: 0;
+  }
+
+  .reassign-card-ivan-fields,
+  .reassign-card-mikhail-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .reassign-card-ivan-field,
+  .reassign-card-mikhail-field {
+    min-width: 0;
+    padding: 7px;
+    font-size: 8px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-card-ivan-actions,
+  .reassign-card-mikhail-actions {
+    width: 100%;
+  }
+
+  .reassign-card-ivan-btn,
+  .reassign-card-mikhail-btn {
+    width: 100%;
+    min-height: 40px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 9px;
+  }
+
+  .reassign-card-dmitry {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: -2px;
+  }
+
+  .reassign-card-dmitry-name {
+    min-width: 0;
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .reassign-card-dmitry-reason {
+    font-size: 8px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .reassign-card-dmitry-body {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .reassign-card-dmitry-disabled-btn {
+    width: 100%;
+    min-height: 38px;
+    padding: 8px 12px;
+  }
+
+  .reassign-footer {
+    position: sticky;
+    bottom: -14px;
+    z-index: 9;
+    margin: 2px -12px -14px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: linear-gradient(to top, #fff 76%, rgba(255,255,255,0));
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .reassign-footer-back,
+  .reassign-footer-auto {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border-radius: 9px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 390px) {
+  .reassign-modal {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .reassign-header {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .reassign-card-ivan-fields,
+  .reassign-card-mikhail-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .reassign-footer {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
