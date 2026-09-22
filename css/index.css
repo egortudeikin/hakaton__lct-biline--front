@@ -12,3 +12,6 @@
 @import "./blocks/modal-urgent-request.css";
 @import "./blocks/menu-engineer.css";
 @import "./blocks/engineer_replacement_menu.css";
+
+
+@import "./responsive.css";
