@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru" class="page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Назначение нового исполнителя</title>
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body class="page__body">
+        <main class="main-conteiner">
+            <div class="reassign-modal">
+                <div class="reassign-header">
+                    <div class="reassign-header-titles">
+                        <div class="reassign-header-badge">⚡ ПЕРЕПЛАНИРОВАНИЕ</div>
+                        <h2 class="reassign-header-title">Назначение нового исполнителя</h2>
+                        <p class="reassign-header-subtitle">
+                            Выберите мастера для перераспределения заявки <span class="reassign-header-request">#REQ-105</span>
+                        </p>
+                    </div>
+                    <button class="reassign-header-close">&times;</button>
+                </div>
+
+                <div class="reassign-request-info">
+                    <div class="reassign-request-left">
+                        <div class="reassign-request-title">#REQ-105 • ул. Ленина 45, кв. 12</div>
+                        <div class="reassign-request-detail">
+                            Услуга: <st>Подключение XGS-PON</st> | Требуется: <b>Роутер Wi-Fi 6 Pro (1 шт)</b>
+                        </div>
+                        <div class="reassign-request-reason">
+                            Причина снятия: Недоступность предыдущего инженера (#ENG-102)
+                        </div>
+                    </div>
+                    <div class="reassing-request-right">
+                        <div class="reassign-request-sla">SLA: 12:00</div>
+                    </div>
+                </div>
+
+                <div class="reassign-section-label">ДОСТУПНЫЕ ИНЖЕНЕРЫ (АВТО-ПОДБОР СИСТЕМОЙ)</div>
+                <div class="reassign-card-ivan">
+                    <div class="reassign-card-ivan-top">
+                        <div class="reassign-card-ivan-top-left">
+                            <div class="reassign-card-ivan-avatar">👷‍♂️</div>
+                            <div class="reassign-card-ivan-name">
+                                Иван Петров <span class="reassign-card-ivan-id">(#ENG-104)</span>
+                                <div class="reassign-card-ivan-meta">
+                                    Авто: Lada Largus • Загрузка: <b>3/5 заявок</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reassign-card-ivan-optimal">★ ОПТИМАЛЬНЫЙ ВЫБОР</div>
+                    </div>
+
+                    <div class="reassign-card-ivan-body">
+                        <div class="reassign-card-ivan-fields">
+                            <div class="reassign-card-ivan-field">
+                                Отклонение: <b class="reassign-card-ivan-dev">+1.8 км (+8 мин)</b>
+                            </div>
+                            <div class="reassign-card-ivan-field">
+                                ТМЦ: <b class="reassign-card-ivan-stock">В наличии (2 шт)</b>
+                            </div>
+                        </div>
+                        <div class="reassign-card-ivan-actions">
+                            <button class="reassign-card-ivan-btn">Назначить мастера</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="reassign-card-mikhail">
+                    <div class="reassign-card-mikhail-top">
+                        <div class="reassign-card-mikhail-avatar">👷‍♂️</div>
+                        <div class="reassign-card-mikhail-name">
+                            Михаил Сидоров <span class="reassign-card-mikhail-id">(#ENG-108)</span>
+                            <div class="reassign-card-mikhail-meta">
+                                Авто: Gazelle • Загрузка: <st>4/5 заявок</st>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="reassign-card-mikhail-body">
+                        <div class="reassign-card-mikhail-fields">
+                            <div class="reassign-card-mikhail-field">
+                                Отклонение: <b class="reassign-card-mikhail-dev">+5.4 км (+22 мин)</b>
+                            </div>
+                            <div class="reassign-card-mikhail-field">
+                                ТМЦ: <b class="reassign-card-mikhail-stock">В наличии (1 шт)</b>
+                            </div>
+                        </div>
+            
+                        <div class="reassign-card-mikhail-actions">
+                            <button class="reassign-card-mikhail-btn">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="reassign-card-dmitry">
+                    <div class="reassign-card-dmitry-top">
+                        <div class="reassign-card-dmitry-avatar">🚶‍♂️</div>
+                        <div class="reassign-card-dmitry-name">
+                            Дмитрий Кузнецов <span class="reassign-card-dmitry-id">(Пеший)</span>
+                            <div class="reassign-card-dmitry-reason">
+                                ⚠️ Нет нужного роутера в наличии • Отклонение +12 км
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reassign-card-dmitry-body">
+                        <button class="reassign-card-dmitry-disabled-btn" disabled>Не подходит</button>
+                    </div>
+                </div>
+                <div class="reassign-footer">
+                    <button class="reassign-footer-back">Вернуть заявку в пул</button>
+                    <button class="reassign-footer-auto">⚡ Авто-распределение</button>
+                </div> 
+            </div>
+        </main>   
+    </body>
+</html>
