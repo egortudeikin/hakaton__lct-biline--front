@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru" class="page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Меню замены инженера</title>
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body class="page__body">
+        <main class="main-conteiner">
+            
+            <div class="assign-master-modal">
+                
+                <div class="assign-master-header">
+                    <div class="assign-master-header-titles">
+                        <h2 class="assign-master-title">Назначение мастера на заявку #8921</h2>
+                        <p class="assign-master-subtitle">Адрес: ул. Тверская 12 • Услуга: Подключение интернета</p>
+                    </div>
+                    <button class="assign-master-close-btn">&times;</button>
+                </div>
+            
+                <div class="assign-master-search-wrapper">
+                    <input type="text" class="assign-master-search-input" placeholder="Поиск по имени, авто или навыкам...">
+                </div>
+            
+                <div class="assign-master-filters">
+                    <div class="assign-master-chip assign-master-chip-recommended">⭐ Рекомендуемые</div>
+                    <div class="assign-master-chip assign-master-chip-car">🚗 На авто</div>
+                    <div class="assign-master-chip assign-master-chip-stock">📦 ТМЦ в наличии</div>
+                </div>
+            
+                <div class="assign-master-list-label">Доступные инженеры (3)</div>
+
+                <div class="assign-master-list">
+                    <div class="assign-master-card-ivan">
+                        <div class="assign-master-card-ivan-left">
+                            <div class="assign-master-card-ivan-name-group">
+                                <div class="assign-master-card-ivan-dot"></div>
+                                <div class="assign-master-card-ivan-name">Иван Петров</div>
+                                <div class="assign-master-card-ivan-badge">Оптимален AI</div>
+                            </div>
+            
+                            <div class="assign-master-card-ivan-detail">
+                                <span class="assign-master-card-ivan-icon">🚗</span> Lada Largus (А777АА777) • Загрузка: <b>3/5 задач</b>
+                            </div>
+                            <div class="assign-master-card-ivan-detail">
+                                <span class="assign-master-card-ivan-icon">🛠</span> ВОЛС, Настройка Wi-Fi 6, Монтаж КСПВ
+                            </div>
+                            <div class="assign-master-card-ivan-skills">
+                                <div class="assign-master-card-ivan-skill-tag">✓ Роутер Wi-Fi 6 в кабель в авто</div>
+                            </div>
+                        </div>
+                        
+                        <div class="assign-master-card-ivan-right">
+                            <div class="assign-master-card-ivan-distance">
+                                <div class="assign-master-card-ivan-km">+2.1 км</div>
+                                <div class="assign-master-card-ivan-eta">ETA: 09:40</div>
+                            </div>
+                            <button class="assign-master-card-ivan-btn">Назначить</button>
+                        </div>
+                    </div>
+                    <div class="assign-master-card-alexey">
+                        <div class="assign-master-card-alexey-left">
+                            <div class="assign-master-card-alexey-name-group">
+                                <div class="assign-master-card-alexey-dot"></div>
+                                <div class="assign-master-card-alexey-name">Алексей Смирнов</div>
+                            </div>
+            
+                            <div class="assign-master-card-alexey-detail">
+                                <span class="assign-master-card-alexey-icon">🚶</span> Пеший инженер • Загрузка: <b>2/5 задач</b>
+                            </div>
+                            <div class="assign-master-card-alexey-detail">
+                                <span class="assign-master-card-alexey-icon">🛠</span> Настройка Wi-Fi, Диагностика линий
+                            </div>
+            
+                            <div class="assign-master-card-alexey-skills">
+                                <div class="assign-master-card-alexey-skill-tag">⚠ Нет роутера Wi-Fi 6 в сумке</div>
+                            </div>
+                        </div>
+                        
+                        <div class="assign-master-card-alexey-right">
+                            <div class="assign-master-card-alexey-distance">
+                                <div class="assign-master-card-alexey-km">+4.8 км</div>
+                                <div class="assign-master-card-alexey-eta">ETA: 10:15</div>
+                            </div>
+                            <button class="assign-master-card-alexey-btn">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="assign-master-card-dmitry">
+                        <div class="assign-master-card-dmitry-left">
+                            <div class="assign-master-card-dmitry-name-group">
+                                <div class="assign-master-card-dmitry-dot"></div>
+                                <div class="assign-master-card-dmitry-name">Дмитрий Козлов</div>
+                            </div>
+            
+                            <div class="assign-master-card-dmitry-detail">
+                                <span class="assign-master-card-dmitry-icon">🚗</span> Hyundai Solaris • Загрузка: <b>6/5 (Занят)</b>
+                            </div>
+                            <div class="assign-master-card-dmitry-detail">
+                                <span class="assign-master-card-dmitry-icon">🛠</span> Сварка ВОЛС, Монтаж оборудования
+                            </div>
+                        </div>
+                        
+                        <div class="assign-master-card-dmitry-right">
+                            <div class="assign-master-card-dmitry-distance">
+                                <div class="assign-master-card-dmitry-km">+12.3 км</div>
+                                <div class="assign-master-card-dmitry-eta">Пиздец</div>
+                            </div>
+                            <button class="assign-master-card-dmitry-btn">Недоступен</button>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <!-- Footer -->
+                <div class="assign-master-footer">
+                    <button class="assign-master-cancel-btn">Отмена</button>
+                    <div class="assign-master-hint">Авто-подбор по алгоритму VRP</div>
+                </div>
+            </div>
+        </main>   
+        
+    </body>
+</html>
