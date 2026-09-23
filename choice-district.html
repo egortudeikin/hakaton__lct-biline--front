@@ -3,18 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Выбор района</title>
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
+
   <body class="page__body">
-    <div class="modal__choice-district">
-      <div class="choice-district__header">
-        <button class="btn__delete">Удаление данных по району</button>
-        <button class="btn__cross">
-          <svg class="" width="16" height="16">
-            <use href="./decor/cross.svg"></use>
-          </svg>
-        </button>
+    <main class="choice-district__page">
+      <section class="modal__choice-district">
+        <header class="choice-district__header">
+          <button class="btn__delete" id="open-delete-panel" type="button">Удаление данных по району</button>
+
+          <button class="btn__cross" type="button" aria-label="Закрыть">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M1.08047 15.3601L0.000468805 14.2801L6.56047 7.68009L0.000468805 1.08009L1.08047 8.72612e-05L7.64047 6.60009L14.1605 8.72612e-05L15.2405 1.08009L8.68047 7.68009L15.2405 14.2801L14.1605 15.3601L7.64047 8.80009L1.08047 15.3601Z" fill="#94A3B8"/>
+            </svg>
+          </button>
+        </header>
+
+        <div class="choice-district__body">
+          <details class="choice-district__select">
+            <summary class="choice-district__select-button">
+              <span>Выберите район</span>
+              <span class="choice-district__chevron" aria-hidden="true"></span>
+            </summary>
+
+            <div class="choice-district__options">
+              <button class="choice-district__option" type="button">Самарский район</button>
+              <button class="choice-district__option" type="button">ZOV район</button>
+              <button class="choice-district__option" type="button">Московский район</button>
+              <button class="choice-district__option" type="button">рай ON</button>
+            </div>
+          </details>
+        </div>
+
+        <footer class="choice-district__footer">
+          <button class="choice-district__upload" type="button">Загрузить CSV</button>
+          <button class="choice-district__open" type="button">Открыть данные по району</button>
+        </footer>
+      </section>
+
+      <!-- Панель удаления данных -->
+      <div class="delete-panel" id="delete-panel" aria-hidden="true">
+        <div class="delete-panel__header">Удаление данных по району</div>
+        <div class="delete-panel__body">
+          <label class="delete-panel__district">
+            <input type="checkbox" name="district" value="Сегодня" />
+            <span>Сегодня</span>
+          </label>
+          <label class="delete-panel__district">
+            <input type="checkbox" name="district" value="Предыдущие дни" />
+            <span>Предыдущие дни</span>
+          </label>
+        </div>
+        <button class="delete-panel__button" id="open-confirm" type="button">Удалить</button>
       </div>
-    </div>
+
+      <!-- Подтверждение удаления -->
+      <div class="delete-confirm" id="delete-confirm" aria-hidden="true">
+        <div class="delete-confirm__title">ПОДТВЕРЖДЕНИЕ</div>
+        <p class="delete-confirm__text">Вы уверены, что хотите удалить данные?</p>
+        <div class="delete-confirm__actions">
+          <button class="delete-confirm__delete" id="confirm-delete" type="button">Удалить</button>
+          <button class="delete-confirm__cancel" id="cancel-delete" type="button">Отмена</button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
